@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'AvertaCyrillicBlack';
+  src: url("../../fonts/AvertaCyrillicBlack.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvertaCyrillicBold';
+  src: url("../../fonts/AvertaCyrillicBold.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvertaCyrillicSemiBold';
+  src: url("../../fonts/AvertaCyrillicSemiBold.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvertaCyrillicRegular';
+  src: url("../../fonts/AvertaCyrillicRegular.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvertaCyrillicLight';
+  src: url("../../fonts/AvertaCyrillicLight.otf") format("truetype"); }

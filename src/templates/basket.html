@@ -1,0 +1,95 @@
+{% include "parts/header_white.html" %}
+
+<section class="basket">
+	<div class="container">
+		<div class="basket-container">
+			<div class="basket_heading">
+				<h2>Корзина</h2>
+			</div>
+			<div class="basket_item">
+				<div class="basket_item_info">
+					<img class="basket_item_close" src="../img/closel.png" alt="">
+					<div class="basket_item_info_img">
+						<img src="../img/package.png" alt="">
+					</div>
+					<div class="basket_item_info_content">
+						<h3>Персиковый йогурт</h3>
+						<p>4,1 % жиры / 3 % белки </p>
+					</div>
+				</div>
+				<div class="basket_item_price">
+					<span class="basket_item_price_one">40 грн.</span>
+					<div class="basket_item_price_num buttonNum">
+						<a href="#" class="minus"><span>-</span></a>
+						<input class="buttonNumInput" type="number" value="0">
+						<a href="#" class="plus"><span>+</span></a>
+					</div>
+					<span class="basket_item_price_all">480грн</span>
+				</div>
+			</div>
+			<div class="basket_item">
+				<div class="basket_item_info">
+					<img class="basket_item_close" src="../img/closel.png" alt="">
+					<div class="basket_item_info_img">
+						<img src="../img/package.png" alt="">
+					</div>
+					<div class="basket_item_info_content">
+						<h3>Персиковый йогурт</h3>
+						<p>4,1 % жиры / 3 % белки </p>
+					</div>
+				</div>
+				<div class="basket_item_price">
+					<span class="basket_item_price_one">40 грн.</span>
+					<div class="basket_item_price_num buttonNum">
+						<a href="#" class="minus"><span>-</span></a>
+						<input class="buttonNumInput" type="number" value="0">
+						<a href="#" class="plus"><span>+</span></a>
+					</div>
+					<span class="basket_item_price_all">480грн</span>
+				</div>
+			</div>
+			<div class="basket_item basket_item-total">
+				<div class="basket_item_price">
+					<span class="basket_item_price_one">Сумма:</span>
+					<div class="basket_item_cupon">
+						<p>Без купона</p>
+						<span>480грн.</span>
+					</div>
+					<div class="basket_item_cupon">
+						<p>С купоном</p>
+						<span>480грн.</span>
+					</div>
+				</div>
+				
+
+			</div>
+			<div class="basket_form">
+				<form action="">
+					<div class="basket_form_cupon">
+						<input class="basket_form_input_cupon" type="text" placeholder="Введите код купона">
+						<input class="basket_form_input_cupon-submit" type="submit" value="Ок">
+					</div>
+					
+					<input type="text" placeholder="Имя и фамилия">
+					<input type="text" placeholder="Мобильный телефон">
+					<select class="basket_form_select-delivery" size="1">
+						<option value="0">Выберите способ доставки</option>
+						<option value="1">Из нашего магазина</option>
+						<option value="2">Из новой почты</option>
+						<option value="3">До двери</option>
+					</select>
+
+					<div class="basket_form_result">
+						<div class="basket_form_result_all"><span>Итого:</span></div>
+						<div class="basket_form_result_sum"><span>Товаров на суму</span><span>480грн</span></div>
+						<div class="basket_form_result_sum"><span>Доставка</span><span>0</span></div>
+						<div class="basket_form_result_pay"><span>К оплате:</span><span>480грн</span></div>
+					</div>
+					<input class="basket_form_submit" type="submit" value="Оформить заказ">
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include "parts/footer.html" %}
