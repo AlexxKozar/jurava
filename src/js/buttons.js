@@ -17,14 +17,13 @@ $(function() {
         	e.preventDefault();
             var data = asd.find('input').val();
             if(data > 0) {
-                asd.find('input').val(parseInt(data) - 1);
+                asd.find('input').val(function(i, oldval){return --oldval;});
             }
             return false
         });
         asd.find('a.plus').click(function(e) {
         	e.preventDefault();
-            let data = asd.find('input').val();
-            asd.find('input').val(parseInt(data) + 1);
+            asd.find('input').val(function(i, oldval){return ++oldval;});
             return false
         });
     });

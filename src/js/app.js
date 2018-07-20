@@ -19,4 +19,12 @@ $('.product_list_items').on('wheel', (function(e) {
   }
 }));
 
-	$('.slick-dots').appendTo('.product_list_controls_scroll');
+
+$('.slick-dots').appendTo('.product_list_controls_scroll');
+
+$('.distributors_item_row').slick({
+  infinite: true,
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  dots: false,
+});
