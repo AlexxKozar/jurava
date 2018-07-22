@@ -10441,7 +10441,8 @@ return jQuery;
 __webpack_require__(2);
 __webpack_require__(3);
 __webpack_require__(5);
-module.exports = __webpack_require__(6);
+__webpack_require__(6);
+module.exports = __webpack_require__(7);
 
 
 /***/ }),
@@ -13558,6 +13559,45 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
 
+  // All close buttons in basket
+  var basketItem = (0, _jquery2.default)('.basket_item');
+  var basketItemNum = basketItem.length;
+
+  basketItem.each(function () {
+
+    var asd = (0, _jquery2.default)(this);
+    var basketButtonClose = asd.find('img.basket_item_close');
+
+    basketButtonClose.click(function (e) {
+      var basketItemToClose = asd.find('div.basket_item');
+      basketItemToClose.prevObject[0].classList.toggle('none');
+      basketItemNum--;
+      if (basketItemNum == 1) {
+        (0, _jquery2.default)('.basket_item-total')[0].classList.toggle('none');
+        (0, _jquery2.default)('.basket_form-wrap')[0].classList.toggle('none');
+        (0, _jquery2.default)('.basketHeadingInner')[0].innerHTML = 'Корзина пуста :(';
+        (0, _jquery2.default)('.basketHeadingInner')[0].style.textAlign = "center";
+      }
+      return false;
+    });
+  });
+});
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery2.default)(function () {
+
     var buttonNum = (0, _jquery2.default)('.buttonNum'); // Buttons with a counter
     var buttonsNum = (0, _jquery2.default)('.buttonsNum'); // Container of buttons 
     var buttonOpenNum = (0, _jquery2.default)('.buttonOpenNum'); // Buttons wich open counter
@@ -13598,7 +13638,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

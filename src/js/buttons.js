@@ -1,9 +1,5 @@
 import $ from "jquery";
 
-
-
-
-
 $(function() {
 
 	let buttonNum  = $('.buttonNum'); // Buttons with a counter

@@ -1540,8 +1540,7 @@ body {
 
 .basket_heading {
   padding: 0 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #aeaeae; }
+  padding-bottom: 30px; }
   .basket_heading h2 {
     font-family: "AvertaCyrillicSemiBold";
     font-size: 2rem;
@@ -1549,7 +1548,7 @@ body {
     text-align: left; }
 
 .basket_item {
-  border-bottom: 1px solid #aeaeae;
+  border-top: 1px solid #aeaeae;
   display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;

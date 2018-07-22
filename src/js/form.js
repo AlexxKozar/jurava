@@ -79,8 +79,6 @@ $('.basket_form_select').each(function(){
 
 
 
-
-
 function innerSelectFunc() {
 $('.basket_form_selectInner').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
