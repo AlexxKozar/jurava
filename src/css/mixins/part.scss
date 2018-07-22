@@ -1612,7 +1612,6 @@
 
 
 .basket_form_select-wrap{
-	padding: 25px 0;
 		-webkit-transition: all .2s;
 	   -moz-transition: all .2s;
 	    -ms-transition: all .2s;
@@ -1642,12 +1641,29 @@
   	border: 1px solid #bfbfbf;
 	font-family: $semibold;
 	font-size: .8rem;
+	line-height: 1.2rem;
 	padding: 16px 20px;
 	-webkit-border-radius: 25px;
 	        border-radius: 25px;
 	outline: none;
 	color: $textColor;
 	transition: all 0.2s ease-out;
+	@media screen and (max-width: 1580px){
+				padding: 14px 18px;
+				margin-top: 18px;
+			}
+			@media screen and (max-width: 1440px){
+				padding: 12px 18px;
+				margin-top: 16px;
+			}
+			@media screen and (max-width: 1200px){
+				padding: 10px 16px;
+				margin-top: 14px;
+			}
+			@media screen and (max-width: 768px){
+				padding: 12px 18px;
+				margin-top: 12px;
+			}
   &:after {
     content:url(../../img/back.png);
     position: absolute;
@@ -1727,7 +1743,6 @@
 	}
 	.select{
 		width: 	100%;
-		margin-top: 20px;
 	}
 }
 

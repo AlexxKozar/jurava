@@ -13644,25 +13644,77 @@ Reference: http://jsfiddle.net/BB3JK/47/
             (0, _jquery2.default)(this).removeClass('active').next('ul.select-options').hide();
         });
         (0, _jquery2.default)(this).toggleClass('active').next('ul.select-options').toggle();
-        // $('.select').classList.toggle('mb50');
     });
 
     $listItems.click(function (e) {
         e.stopPropagation();
         $styledSelect.text((0, _jquery2.default)(this).text()).removeClass('active');
         $this.val((0, _jquery2.default)(this).attr('rel'));
+        console.log($this.val());
+
+        if ($this.val() == 1) {
+            document.getElementById("basketFormDelivery").innerHTML = '<div class="basket_form_delivery_shop">\n                            <p><img src="./img/facebook-logo-button.png" alt="">\u0433. \u041A\u0438\u0435\u0432, \u0443\u043B. \u0415\u0432\u0433\u0435\u043D\u0438\u044F \u0421\u0432\u0435\u0440\u0441\u0442\u044E\u043A\u0430<br> 21, \u043E\u0444. 102</p>\n                            <p><img src="./img/facebook-logo-button.png" alt="">\u041F\u043D.-\u041F\u0442. 10:00 - 15:00</p>\n                        </div>';
+        } else if ($this.val() == 2) {
+            document.getElementById("basketFormDelivery").innerHTML = '<div class="basket_form_delivery_nov">\n                            <input type="text" placeholder="\u0413\u043E\u0440\u043E\u0434:">\n                            <select class="basket_form_select basket_form_selectInner" id="mounth">\n                                <option value="hide">\u041D\u043E\u043C\u0435\u0440 \u043E\u0442\u0434\u0435\u043B\u0435\u043D\u0438\u044F \u041D\u041F</option>\n                                <option value="1" rel="icon-temperature">1</option>\n                                <option value="2">2</option>\n                                <option value="3">3</option>\n                            </select> \n                        </div>';
+            innerSelectFunc();
+        } else if ($this.val() == 3) {
+            document.getElementById("basketFormDelivery").innerHTML = '<div class="basket_form_delivery_door">\n                            <input type="text" placeholder="\u0413\u043E\u0440\u043E\u0434:">\n                            <input type="text" placeholder="\u0423\u043B\u0438\u0438\u0446\u0430:">\n                            <div>\n                                <input type="text" placeholder="\u0414\u043E\u043C:">\n                                <input type="text" placeholder="\u041A\u0432\u0430\u0440\u0442\u0438\u0440\u0430:">\n                            </div>\n                        </div>';
+        }
         $list.hide();
-        // $('.basket_form_select-wrap')[0].classList.toggle('mb50');
-        //console.log($this.val());
     });
 
     (0, _jquery2.default)(document).click(function () {
         $styledSelect.removeClass('active');
         $list.hide();
-        (0, _jquery2.default)('.basket_form_select-wrap')[0].classList.remove('mb50');
     });
 });
 
+function innerSelectFunc() {
+    (0, _jquery2.default)('.basket_form_selectInner').each(function () {
+        var $this = (0, _jquery2.default)(this),
+            numberOfOptions = (0, _jquery2.default)(this).children('option').length;
+
+        $this.addClass('select-hidden');
+        $this.wrap('<div class="select"></div>');
+        $this.after('<div class="select-styled"></div>');
+
+        var $styledSelect = $this.next('div.select-styled');
+        $styledSelect.text($this.children('option').eq(0).text());
+
+        var $list = (0, _jquery2.default)('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($styledSelect);
+
+        for (var i = 0; i < numberOfOptions; i++) {
+            (0, _jquery2.default)('<li />', {
+                text: $this.children('option').eq(i).text(),
+                rel: $this.children('option').eq(i).val()
+            }).appendTo($list);
+        }
+        var $listItems = $list.children('li');
+
+        $styledSelect.click(function (e) {
+            e.stopPropagation();
+            (0, _jquery2.default)('div.select-styled.active').not(this).each(function () {
+                (0, _jquery2.default)(this).removeClass('active').next('ul.select-options').hide();
+            });
+            (0, _jquery2.default)(this).toggleClass('active').next('ul.select-options').toggle();
+        });
+
+        $listItems.click(function (e) {
+            e.stopPropagation();
+            $styledSelect.text((0, _jquery2.default)(this).text()).removeClass('active');
+            $this.val((0, _jquery2.default)(this).attr('rel'));
+            console.log($this.val());
+            $list.hide();
+        });
+
+        (0, _jquery2.default)(document).click(function () {
+            $styledSelect.removeClass('active');
+            $list.hide();
+        });
+    });
+}
 // function Change(seln) {
 // 	console.log(123);
 // 	selNum = seln.type.selectedIndex;

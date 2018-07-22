@@ -2,7 +2,7 @@
 
 <section class="basket">
 	<div class="container">
-		<form action="" method="" class="basket-container">
+		<form action="./form.php" method="GET" class="basket-container">
 			<div class="basket_heading">
 				<h2>Корзина</h2>
 			</div>
@@ -70,40 +70,18 @@
 						<input class="basket_form_input_cupon-submit" type="submit" value="Ок">
 					</div>
 					
-					<input type="text" placeholder="Имя и фамилия">
+					<input type="text" name="name" placeholder="Имя и фамилия">
 					<input type="text" placeholder="Мобильный телефон">
 
 					<div class="basket_form_select-wrap" onChange="selChange(this)">
-						<select class="basket_form_select" id="mounth">
+						<select class="basket_form_select" name="select" id="mounth">
 						    <option value="hide">Выберите способ доставки</option>
 						    <option value="1" rel="icon-temperature">Из нашего магазина</option>
 						    <option value="2">Из новой почты</option>
 						    <option value="3">До двери</option>
 						</select> 
 					</div>	
-					<div class="basket_form_delivery">
-						<div class="basket_form_delivery_shop">
-							<p><img src="./img/facebook-logo-button.png" alt="">г. Киев, ул. Евгения Сверстюка<br> 21, оф. 102</p>
-							<p><img src="./img/facebook-logo-button.png" alt="">Пн.-Пт. 10:00 - 15:00</p>
-						</div>
-						<div class="basket_form_delivery_nov">
-							<input type="text" placeholder="Город:">
-							<select class="basket_form_select" id="mounth">
-							    <option value="hide">Номер отделения НП</option>
-							    <option value="1" rel="icon-temperature">1</option>
-							    <option value="2">2</option>
-							    <option value="3">3</option>
-							</select> 
-						</div>
-						<div class="basket_form_delivery_door">
-							<input type="text" placeholder="Город:">
-							<input type="text" placeholder="Улиица:">
-							<div>
-								<input type="text" placeholder="Дом:">
-								<input type="text" placeholder="Квартира:">
-							</div>
-						</div>
-					</div>				
+					<div class="basket_form_delivery" id="basketFormDelivery"></div>				
 
 					<div class="basket_form_result">
 						<div class="basket_form_result_all"><span>Итого:</span></div>
