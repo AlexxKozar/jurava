@@ -44,8 +44,8 @@ $('.basket_form_select').each(function(){
 
         if($this.val()==1){
              document.getElementById("basketFormDelivery").innerHTML = `<div class="basket_form_delivery_shop">
-                            <p><img src="./img/facebook-logo-button.png" alt="">г. Киев, ул. Евгения Сверстюка<br> 21, оф. 102</p>
-                            <p><img src="./img/facebook-logo-button.png" alt="">Пн.-Пт. 10:00 - 15:00</p>
+                            <p><img src="./img/placeholder.png" alt="">г. Киев, ул. Евгения Сверстюка<br> 21, оф. 102</p>
+                            <p><img src="./img/clock-circular-outline.png" alt="">Пн.-Пт. 10:00 - 15:00</p>
                         </div>`;  
         } else if($this.val()==2){
              document.getElementById("basketFormDelivery").innerHTML = `<div class="basket_form_delivery_nov">
@@ -128,17 +128,3 @@ $('.basket_form_selectInner').each(function(){
 
 
 }
-	// function Change(seln) {
-	// 	console.log(123);
-	// 	selNum = seln.type.selectedIndex;
-	// 	value = seln.type.options[selNum].value;
-	// 	if (value==1){
-	// 	 $('.basket_form_delivery').hide("slow", function() {
-	// 	 $('.basket_form_delivery_nov').show("slow");
-	// 	 });
-	// 	}else{
-	// 	 $('.basket_form_delivery_nov').hide("slow", function() {
-	// 	 $('.basket_form_delivery').show("slow");
-	// 	 });
-	// 	 }
-	// }

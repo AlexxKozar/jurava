@@ -1,5 +1,8 @@
 {% include "parts/header.html" %}
-
+{% include "parts/mobile_menu.html" %}
+<div class="preloader">
+	Грузимся...
+</div>
 <section class="banner">
 		
 	<header>
@@ -8,10 +11,11 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="">Продукция</a></li>
-				<li><a href="">Поддержка</a></li>
-				<li><a href="">Контакты</a></li>
-				<li><a href=""><img src="img/map_1.png"></a></li>
+				<li class="mobile_menu_wrapper" data-menustate="none"></li>
+				<li class="hiddenLink"><a href="">Продукция</a></li>
+				<li class="hiddenLink"><a href="">Поддержка</a></li>
+				<li class="hiddenLink"><a href="">Контакты</a></li>
+				<li class="hiddenLink"><a href=""><img src="img/map_1.png"></a></li>
 				<li><a href="" class="cart_icon">
 					<p class="cart_count">20</p>
 					<img src="img/Basket_white.png">
@@ -104,23 +108,29 @@
 			Готовьте в любое время и в любом месте
 		</div>
 		<div class="row instruction_row">
-			<div class="instruction_item">
-				<img src="img/Icon1.png">
-				<p>Смешайте содержимое пакета Jurava с питевой водой </p>
+			<div class="instruction_item_wrapper">
+				<div class="instruction_item">
+					<img src="img/Icon1.png">
+					<p>Смешайте содержимое пакета Jurava с питевой водой </p>
+				</div>
 			</div>
 			<div class="instruction_item instruction_item_support">
 				<img src="img/Arrow.png">
 			</div>
-			<div class="instruction_item">
-				<img src="img/Icon2.png">
-				<p>Поставьте в йогуртницу на 8 - 12 часов.</p>
+			<div class="instruction_item_wrapper">
+				<div class="instruction_item">
+					<img src="img/Icon2.png">
+					<p>Поставьте в йогуртницу на 8 - 12 часов.</p>
+				</div>
 			</div>
 			<div class="instruction_item instruction_item_support">
 				<img src="img/Arrow2.png">
 			</div>
-			<div class="instruction_item">
-				<img src="img/Icon3.png">
-				<p>Охолодите в холодильнике.Готово!</p>
+			<div class="instruction_item_wrapper">
+				<div class="instruction_item">
+					<img src="img/Icon3.png">
+					<p>Охолодите в холодильнике.Готово!</p>
+				</div>
 			</div>
 		</div>
 		<a href="" class="button button_white instruction_button">Инструкция по приготовлению</a>

@@ -1,12 +1,4 @@
-@import "../normalize/normalize";
-@import "../fonts/fonts";
 @import "../mixins/base";
-@import "../mixins/media";
-@import "../../../node_modules/slick-carousel/slick/slick.scss";
-@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
-
-
-
 //** --------------> Distributors <----------------- ** //
 
 .distributors{
@@ -93,7 +85,7 @@
 .distributors_ukraine_heading{
 	font-size: 1rem;
 	line-height: 1.5rem;
-	color: $blueLight;
+	color: $blue;
 	font-family: $semibold;
 	text-align: center;
 }
@@ -886,13 +878,13 @@
 		h4{
 	   		font-family: $semibold;
 	   		font-size: 2rem;
-	   		color: $blueLight;
+	   		color: $blue;
 	   		margin-left: 10%;
 	   	}
 	   	span{
 	   		font-family: $semibold;
 	   		font-size: .8rem;
-	   		color: $blueLight;
+	   		color: $blue;
 	   		text-align: left;
 	   		margin-left: 5px;
 	   	}
@@ -908,7 +900,7 @@
 	            align-items: center;	
 	    -webkit-justify-content: space-between;
 	            justify-content: space-between;	
-	    border: 3px solid $blueLight;
+	    border: 3px solid $blue;
 	    border-radius: 20px;
 	    width: 	135px;
 	    height: 40px;
@@ -919,7 +911,7 @@
 	.plus, .minus{
 		width: 39px;
 		height: 39px;
-		background: $blueLight;
+		background: $blue;
 		border-radius:100%;
 		position: relative;
 		text-decoration: none;	
@@ -947,7 +939,7 @@
 		opacity: 1;
 		width: 10px;
 		border:none;
-		color: 	$blueLight;
+		color: 	$blue;
 		font-family: $bold;
 		font-size: .9rem;
 		line-height: 0.9rem;
@@ -1616,7 +1608,7 @@
 	font-family: $semibold;
 	font-size: 1rem;
 	line-height: 1.05rem!important;
-	background: $blueLight;
+	background: $blue;
 	color: #fff!important;
 	position: absolute;
 	right: 2px;
@@ -1723,7 +1715,7 @@
     font-size: .8rem;
     transition: all .2s;
     &:hover {
-		color: $blueLight;
+		color: $blue;
     }
     &[rel="hide"] {
       display: none;
@@ -1755,10 +1747,10 @@
 		position: relative;
 		img{
 			position: absolute;
-			height: 1.1rem;
+			height: auto;
 			width: auto;
-			left: 0;
-			top: .1rem;
+			left:.3rem;
+			top: .3rem;
 		}
 	}
 }
@@ -1794,7 +1786,7 @@
 
 
 .basket_form_submit{
-	background: $blueLight;
+	background: $blue;
 	color: #fff!important;
 	font-size: 1rem!important;
 	padding: 12px 0!important;
@@ -1843,7 +1835,7 @@
 	font-size: 1.25rem;
 	margin-bottom: 5px;
 	&:nth-child(2){
-		color: $blueLight;
+		color: $blue;
 		font-family: $semibold;
 	}
 }
