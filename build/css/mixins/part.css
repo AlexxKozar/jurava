@@ -903,6 +903,9 @@ nav ul {
       padding: 20px 0;
       max-width: 400px;
       margin: 0 auto; } }
+  @media screen and (max-width: 500px) {
+    .products_item {
+      padding: 10px 0; } }
 
 .products_item-odd {
   border-right: 1px solid #dcdcdc; }
@@ -983,7 +986,7 @@ nav ul {
     font-family: "AvertaCyrillicSemiBold";
     font-size: 2rem;
     color: #0065ff;
-    margin-left: 10%; }
+    margin-left: 20%; }
   .products_item_content_price_label span {
     font-family: "AvertaCyrillicSemiBold";
     font-size: .8rem;
@@ -1001,14 +1004,14 @@ nav ul {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   border: 3px solid #0065ff;
-  border-radius: 20px;
-  width: 135px;
-  height: 40px; }
+  border-radius: 1.8rem;
+  width: 9rem;
+  height: 3rem; }
   .products_item_content_price .button-num span {
     margin: 0; }
   .products_item_content_price .button-num .plus, .products_item_content_price .button-num .minus {
-    width: 39px;
-    height: 39px;
+    width: 3rem;
+    height: 3rem;
     background: #0065ff;
     border-radius: 100%;
     position: relative;
@@ -1044,20 +1047,13 @@ nav ul {
   .products_item_content_price .button-num input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 500px) {
     .products_item_content_price .button-num {
-      width: 120px;
-      height: 35px; }
+      width: 8rem;
+      height: 2.5rem; }
       .products_item_content_price .button-num .plus, .products_item_content_price .button-num .minus {
-        width: 34px;
-        height: 34px; } }
-  @media screen and (max-width: 998px) {
-    .products_item_content_price .button-num {
-      width: 100px;
-      height: 31px; }
-      .products_item_content_price .button-num .plus, .products_item_content_price .button-num .minus {
-        width: 30px;
-        height: 30px; } }
+        width: 2.5rem;
+        height: 2.5rem; } }
 
 .products_item-full {
   padding: 100px 0;
@@ -1117,8 +1113,27 @@ nav ul {
       text-align: left;
       -webkit-justify-content: flex-start;
       justify-content: flex-start; }
-      .products_item-full .products_item_content .products_item_content_price_label a {
-        margin-left: 60px; }
+
+.buttonOpenNum {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 3rem;
+  width: 9rem;
+  font-size: 1.2rem;
+  background: #0065ff;
+  color: #fff;
+  font-family: "AvertaCyrillicBold"; }
+  @media screen and (max-width: 500px) {
+    .buttonOpenNum {
+      height: 2.5rem;
+      width: 8rem; } }
+  .buttonOpenNum:hover {
+    border: 2px solid #0065ff;
+    color: #0065ff;
+    background: #fff; }
 
 @media screen and (max-width: 1440px) {
   .products_item_content h3 {
@@ -1184,11 +1199,13 @@ nav ul {
   .products_item_content_line {
     margin-top: 10px !important; }
   .products_item_content_consistance {
-    margin-top: 25px; }
+    margin-top: 15px; }
     .products_item_content_consistance div {
       padding: 0 25px; }
+      .products_item_content_consistance div h4 {
+        margin-bottom: 5px; }
   .products_item_content_price {
-    margin-top: 20px; }
+    margin-top: 15px; }
   .products_item-full .products_item_content h3 {
     font-size: 2.4rem;
     line-height: 2.8rem; }
@@ -1207,19 +1224,19 @@ nav ul {
   .products_item_content_line {
     margin-top: 10px !important; }
   .products_item_content_consistance {
-    margin-top: 25px; }
+    margin-top: 15px; }
     .products_item_content_consistance div {
       padding: 0 15px; }
       .products_item_content_consistance div h4 {
         font-size: .9rem;
         line-height: 1.1rem;
-        margin-bottom: 10px; }
+        margin-bottom: 4px; }
       .products_item_content_consistance div span {
         font-family: "AvertaCyrillicBold";
         font-size: 1.1rem;
         line-height: 1.3rem; }
   .products_item_content_price {
-    margin-top: 15px; }
+    margin-top: 10px; }
     .products_item_content_price div {
       width: 50%; }
       .products_item_content_price div h4 {
@@ -1238,36 +1255,40 @@ nav ul {
     margin: 0; } }
 
 @media screen and (max-width: 320px) {
+  .products_content_container {
+    padding: 0 2% !important; }
   .products_header h2 {
-    font-size: 10vw;
-    line-height: 15vw; }
+    font-size: 8vw;
+    line-height: 14vw; }
   .products_item_content {
-    width: 60%; }
+    width: 65%; }
     .products_item_content h3 {
-      font-size: 5.5vw;
-      line-height: 6.6vw;
+      font-size: 5vw;
+      line-height: 6.2vw;
       padding: 0 5%; }
   .products_item_image {
-    width: 40%; }
+    width: 35%;
+    margin-left: 0 !important; }
   .products_item_content_line {
     display: none;
     margin-top: 5px !important; }
   .products_item_content_consistance {
-    margin-top: 15px; }
+    margin-top: 4vw; }
     .products_item_content_consistance div {
       padding: 0 15px; }
       .products_item_content_consistance div h4 {
-        font-size: 5vw;
+        font-size: 4vw;
         line-height: 5vw;
-        margin-bottom: 1.5vw; }
+        margin-bottom: .5vw; }
       .products_item_content_consistance div span {
         font-family: "AvertaCyrillicBold";
-        font-size: 5vw;
+        font-size: 4vw;
         line-height: 6vw; }
   .products_item_content_price {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-top: 2vw;
     margin-right: 0px; }
     .products_item_content_price .products_item_content_price_label {
       padding: 0;
@@ -1275,10 +1296,10 @@ nav ul {
       .products_item_content_price .products_item_content_price_label div {
         width: auto; }
       .products_item_content_price .products_item_content_price_label h4 {
-        font-size: 8vw;
+        font-size: 7vw;
         margin-left: 0; }
       .products_item_content_price .products_item_content_price_label span {
-        font-size: 4vw;
+        font-size: 3.5vw;
         margin-left: 1vw; }
   .products_item-full {
     -webkit-flex-direction: column;
