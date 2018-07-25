@@ -10592,7 +10592,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       breakpoint: 500,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 4
       }
     }]
   });

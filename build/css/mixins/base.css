@@ -230,7 +230,7 @@ nav ul {
       font-family: "AvertaCyrillicRegular";
       padding: 25px 0 25px 15px; }
       .mobile_menu ul li:last-child {
-        border-bottom: 1px solid #f9f9f9; }
+        border-bottom: 1px solid #000; }
       .mobile_menu ul li:hover {
         cursor: pointer; }
       .mobile_menu ul li div {
@@ -292,3 +292,15 @@ nav ul {
 
 .show {
   display: block !important; }
+
+.text_main {
+  font-size: 16px;
+  line-height: 24px; }
+
+.text_heading {
+  font-size: 19px;
+  line-height: 28.5px; }
+
+.heading_main {
+  font-size: 3rem;
+  line-height: 4.5rem; }

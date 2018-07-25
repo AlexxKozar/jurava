@@ -267,7 +267,7 @@ footer{
 			font-family: $regular;
 			padding: 25px 0 25px 15px;
 			&:last-child{
-				border-bottom: 1px solid #f9f9f9;
+				border-bottom: 1px solid #000;
 			}
 			&:hover{
 				cursor: pointer;
@@ -357,3 +357,17 @@ footer{
 }
 
 
+.text_main{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.text_heading{
+	font-size: 19px;
+	line-height: 28.5px;
+}
+
+.heading_main{
+	font-size: 	3rem;
+	line-height: 4.5rem;
+}

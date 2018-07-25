@@ -33,7 +33,7 @@ $(window).on('resize load',function(){
           breakpoint: 500,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToScroll: 4,
           }
         },        
       ]
