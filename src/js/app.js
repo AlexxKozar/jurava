@@ -33,7 +33,7 @@ $(window).on('resize load',function(){
           breakpoint: 500,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
           }
         },        
       ]
@@ -41,13 +41,13 @@ $(window).on('resize load',function(){
 
     $('.product_list_items').on('wheel', (function(e) {
       e.preventDefault();
-      if($(window).width > 768){
+      
         if (e.originalEvent.deltaY < 0) {
           $(this).slick('slickNext');
         } else {
           $(this).slick('slickPrev');
         }
-      }
+      
     }));
 
     $('.product_list_items .slick-dots').appendTo('.product_list_controls_scroll');
@@ -98,10 +98,10 @@ $(window).on("resize load",function(e){
         let burgerButton = document.createElement('div'),
          burgerImg = document.createElement('img');
          if(location.pathname == '/'){
-            burgerImg.setAttribute('src','img/menu-options.svg');
+            burgerImg.setAttribute('src','img/menu-options_black.svg');
          }
          else{
-           burgerImg.setAttribute('src','img/menu-options_black.svg');
+           burgerImg.setAttribute('src','img/menu-options.svg');
          }
          burgerButton.appendChild(burgerImg);
          burgerButton.classList.add('menu_button_mobile');
@@ -122,42 +122,41 @@ $(window).on("resize load",function(e){
 
 $('.banner_scroll_button').on('click',function(e){
     $([document.documentElement, document.body]).animate({
-        scrollTop: $(".product_path").offset().top
-    }, 400);
+        scrollTop: $(".product_path").offset().top}, 400);
 });
 
 
 
 
-$(window).on('load',function(){
-    $('.distributors_item_row').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      dots: true,
-      responsive: [
-        {
-          breakpoint: 1050,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-          }
-        },      
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          }
-        },     
-         {
-          breakpoint: 500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        },        
-      ]
-    });
+// $(window).on('load',function(){
+//     $('.distributors_item_row').slick({
+//       infinite: true,
+//       slidesToShow: 5,
+//       slidesToScroll: 1,
+//       dots: true,
+//       responsive: [
+//         {
+//           breakpoint: 1050,
+//           settings: {
+//             slidesToShow: 4,
+//             slidesToScroll: 1,
+//           }
+//         },      
+//         {
+//           breakpoint: 768,
+//           settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 1,
+//           }
+//         },     
+//          {
+//           breakpoint: 500,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//           }
+//         },        
+//       ]
+//     });
   
-});
+// });

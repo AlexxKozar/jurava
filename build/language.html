@@ -13,8 +13,8 @@
 	</div>
 	<header class="header_invert">
 		<div class="logo">
-			<a href="./index.html">
-				<img src="img/Logo.png">
+			<a href="./">
+				<img src="img/logo.svg">
 			</a>
 		</div>
 		<nav class="nav_invert">
@@ -23,10 +23,10 @@
 				<li class="hiddenLink"><a href="./products.html">Продукция</a></li>
 				<li class="hiddenLink"><a href="./support.html">Поддержка</a></li>
 				<li class="hiddenLink"><a href="./contacts.html">Контакты</a></li>
-				<li class="hiddenLink"><a href="./language.html"><img src="img/map_icon_black.png"></a></li>
+				<li class="hiddenLink"><a href="./language.html"><img class="world" src="img/globe_black.svg"></a></li>
 				<li><a href="./basket.html" class="cart_icon">
 					<p class="cart_count cart_count_invert">20</p>
-					<img src="img/Basket_black.png">
+					<img class="nav_sprite" src="img/cart_black.svg">
 				</a></li>
 			</ul>
 		</nav>
@@ -34,29 +34,30 @@
 
 	
 	
-<div class="mobile_menu">
+<div class="mobile_menu container">
+
 			<ul>
-				<li>Продукция</li>
+				<li><a href="./products.html">Продукция</a></li>
 				<li class="inner_mobile_list" data-state="none">
-					<div>
-						Поддержка
-						<img src="img/next.svg">
+					<div  class="mobile_menu_inner">
+						<a href="./support.html">Поддержка</a>
+						<img class="mobile_menu_inner_img" src="img/next.svg">
 					</div>
 					
 					<ul class="mobile_menu_inner-list">
-						<li>Вопросы и ответы</li>
-						<li>Доставка / оплата</li>
-						<li>Международные дистрибьюторы</li>
+						<li><a href="./faq.html">Вопросы и ответы</a></li>
+						<li><a href="./distributors.html">Доставка / оплата</a></li>
+						<li><a href="./payment.html">Международные дистрибьюторы</a></li>
 					</ul>
 				</li>
-				<li>Контакты</li>
+				<li><a href="./contacts.html">Контакты</a></li>
 			</ul>
 			<div class="languages_mobile">
 				<p>Выберите страну и язык</p>
 				<ul>
 					<li>
 						<a href="">
-							<img src="img/map_icon_black.png" alt="">
+							<img src="img/globe_black.svg" alt="">
 							<p>Международный</p>
 						</a>
 					</li>
@@ -69,7 +70,7 @@
 		<div class="language_line"></div>
 		<div class="language_languages">
 			<div class="language_languages_item">
-				<img src="./img/languales_globe.png" alt="">
+				<img src="./img/globe_black.svg" alt="">
 				<span class="languages_active">Международный</span>
 				<a class="languages_active" href="#">EN</a>
 				<a href="#">RU</a>

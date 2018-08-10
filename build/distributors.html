@@ -13,8 +13,8 @@
 	</div>
 	<header class="header_invert">
 		<div class="logo">
-			<a href="./index.html">
-				<img src="img/Logo.png">
+			<a href="./">
+				<img src="img/logo.svg">
 			</a>
 		</div>
 		<nav class="nav_invert">
@@ -23,10 +23,10 @@
 				<li class="hiddenLink"><a href="./products.html">Продукция</a></li>
 				<li class="hiddenLink"><a href="./support.html">Поддержка</a></li>
 				<li class="hiddenLink"><a href="./contacts.html">Контакты</a></li>
-				<li class="hiddenLink"><a href="./language.html"><img src="img/map_icon_black.png"></a></li>
+				<li class="hiddenLink"><a href="./language.html"><img class="world" src="img/globe_black.svg"></a></li>
 				<li><a href="./basket.html" class="cart_icon">
 					<p class="cart_count cart_count_invert">20</p>
-					<img src="img/Basket_black.png">
+					<img class="nav_sprite" src="img/cart_black.svg">
 				</a></li>
 			</ul>
 		</nav>
@@ -34,29 +34,30 @@
 
 	
 	
-<div class="mobile_menu">
+<div class="mobile_menu container">
+
 			<ul>
-				<li>Продукция</li>
+				<li><a href="./products.html">Продукция</a></li>
 				<li class="inner_mobile_list" data-state="none">
-					<div>
-						Поддержка
-						<img src="img/next.svg">
+					<div  class="mobile_menu_inner">
+						<a href="./support.html">Поддержка</a>
+						<img class="mobile_menu_inner_img" src="img/next.svg">
 					</div>
 					
 					<ul class="mobile_menu_inner-list">
-						<li>Вопросы и ответы</li>
-						<li>Доставка / оплата</li>
-						<li>Международные дистрибьюторы</li>
+						<li><a href="./faq.html">Вопросы и ответы</a></li>
+						<li><a href="./distributors.html">Доставка / оплата</a></li>
+						<li><a href="./payment.html">Международные дистрибьюторы</a></li>
 					</ul>
 				</li>
-				<li>Контакты</li>
+				<li><a href="./contacts.html">Контакты</a></li>
 			</ul>
 			<div class="languages_mobile">
 				<p>Выберите страну и язык</p>
 				<ul>
 					<li>
 						<a href="">
-							<img src="img/map_icon_black.png" alt="">
+							<img src="img/globe_black.svg" alt="">
 							<p>Международный</p>
 						</a>
 					</li>
@@ -68,15 +69,16 @@
 <section class="distributors">
 	<div class="container">
 		<div class="distributors_header">
-			<img src="../img/location.png" alt="">
-			<h2 class="heading mt30 heading_main">Международные дистрибьюторы <br> и места продаж</h2>
+			<!-- <img src="../img/location.png" alt=""> -->
+			<h2 class="heading mt30 heading_black">Международные дистрибьюторы <br> и места продаж</h2>
 		</div>
 		<div class="distributors_item">
 			<h3 class="distributors_heading text_heading">Украина</h3>
 			<div class="distributors_item_content">
 				<p class="text_main">Продкуция доступна: </p>
 				<div class="distributors_item_content_item">
-					<h3 class="distributors_ukraine_heading text_heading">Розничные торговые сети</h3>
+					<h3 class="distributors_ukraine_heading text_main">Розничные торговые сети</h3>
+					<div class="distributors_ukraine_line"></div>
 					<div class="row distributors_item_row">
 						<div><img src="./img/silpo.png" alt=""></div>
 						<div><img src="./img/mega.png" alt=""></div>
@@ -84,14 +86,12 @@
 						<div><img src="./img/auchan-.png" alt=""></div>
 						<div><img src="./img/furshet.png" alt=""></div>
 						<div><img src="./img/novus.png" alt=""></div>
-						<div><img src="./img/furshet.png" alt=""></div>
-						<div><img src="./img/novus.png" alt=""></div>
-						<div><img src="./img/novus.png" alt=""></div>
 					</div>
 				</div>
 
 				<div class="distributors_item_content_item">
-					<h3 class="distributors_ukraine_heading text_heading">Интернет магазины: </h3>
+					<h3 class="distributors_ukraine_heading text_main">Интернет магазины: </h3>
+					<div class="distributors_ukraine_line"></div>
 					<div class="row distributors_item_row distributors_item_row-shop">
 						<div><img src="./img/rozetka.png" alt=""></div>
 						<div><img src="./img/zakaz.png" alt=""></div>
@@ -99,7 +99,8 @@
 				</div>
 
 				<div class="distributors_item_content_item distributors_item_content_item_last">
-					<h3 class="distributors_ukraine_heading text_main text_heading">Авторизированный дистрибьютор: </h3>
+					<h3 class="distributors_ukraine_heading text_main text_main">Авторизированный дистрибьютор: </h3>
+					<div class="distributors_ukraine_line"></div>
 					<p class="text_main"> ООО Клима Трейд<br>
 						Адрес: г. Киев, ул, Евгения Сверстюка, 21 , оф. 104.<br>      
 						+38 (044) 221-89-57<br> 

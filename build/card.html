@@ -13,8 +13,8 @@
 	</div>
 	<header class="header_invert">
 		<div class="logo">
-			<a href="./index.html">
-				<img src="img/Logo.png">
+			<a href="./">
+				<img src="img/logo.svg">
 			</a>
 		</div>
 		<nav class="nav_invert">
@@ -23,10 +23,10 @@
 				<li class="hiddenLink"><a href="./products.html">Продукция</a></li>
 				<li class="hiddenLink"><a href="./support.html">Поддержка</a></li>
 				<li class="hiddenLink"><a href="./contacts.html">Контакты</a></li>
-				<li class="hiddenLink"><a href="./language.html"><img src="img/map_icon_black.png"></a></li>
+				<li class="hiddenLink"><a href="./language.html"><img class="world" src="img/globe_black.svg"></a></li>
 				<li><a href="./basket.html" class="cart_icon">
 					<p class="cart_count cart_count_invert">20</p>
-					<img src="img/Basket_black.png">
+					<img class="nav_sprite" src="img/cart_black.svg">
 				</a></li>
 			</ul>
 		</nav>
@@ -34,29 +34,30 @@
 
 	
 	
-<div class="mobile_menu">
+<div class="mobile_menu container">
+
 			<ul>
-				<li>Продукция</li>
+				<li><a href="./products.html">Продукция</a></li>
 				<li class="inner_mobile_list" data-state="none">
-					<div>
-						Поддержка
-						<img src="img/next.svg">
+					<div  class="mobile_menu_inner">
+						<a href="./support.html">Поддержка</a>
+						<img class="mobile_menu_inner_img" src="img/next.svg">
 					</div>
 					
 					<ul class="mobile_menu_inner-list">
-						<li>Вопросы и ответы</li>
-						<li>Доставка / оплата</li>
-						<li>Международные дистрибьюторы</li>
+						<li><a href="./faq.html">Вопросы и ответы</a></li>
+						<li><a href="./distributors.html">Доставка / оплата</a></li>
+						<li><a href="./payment.html">Международные дистрибьюторы</a></li>
 					</ul>
 				</li>
-				<li>Контакты</li>
+				<li><a href="./contacts.html">Контакты</a></li>
 			</ul>
 			<div class="languages_mobile">
 				<p>Выберите страну и язык</p>
 				<ul>
 					<li>
 						<a href="">
-							<img src="img/map_icon_black.png" alt="">
+							<img src="img/globe_black.svg" alt="">
 							<p>Международный</p>
 						</a>
 					</li>
@@ -77,7 +78,7 @@
 						<div class="card_item_info_row_leftside">
 							<div class="card_item_info_row_leftside_contain">
 								<div class="card_item_info_row_leftside_contain_item">
-									<p>Жир</p>
+									<p>Жиры</p>
 									<h4>3,2%</h4>
 								</div>
 								<div class="card_item_info_row_leftside_contain_item">
@@ -99,7 +100,7 @@
 							</div>
 						</div>
 						<div class="card_item_info_row_rightside">
-							<p>Сделай 1 кг свежего йогурта</p>
+							<img src="img/fresh.svg" alt="">
 						</div>
 					</div>
 				
@@ -116,6 +117,7 @@
 							<img src="img/checked.png">
 							<p>Только натуральные ингридиенты</p>
 						</li>
+					</ul><ul>
 						<li>
 							<img src="img/checked.png">
 							<p>Без консервантов</p>
@@ -169,7 +171,7 @@
 						<div class="card_item_info_row_leftside">
 							<div class="card_item_info_row_leftside_contain">
 								<div class="card_item_info_row_leftside_contain_item">
-									<p>Жир</p>
+									<p>Жиры</p>
 									<h4>3,2%</h4>
 								</div>
 								<div class="card_item_info_row_leftside_contain_item">
@@ -191,7 +193,7 @@
 							</div>
 						</div>
 						<div class="card_item_info_row_rightside">
-							<p>Сделай 1 кг свежего йогурта</p>
+							<img src="img/fresh.svg" alt="">
 						</div>
 					</div>
 				
@@ -208,6 +210,7 @@
 							<img src="img/checked.png">
 							<p>Только натуральные ингридиенты</p>
 						</li>
+					</ul><ul>
 						<li>
 							<img src="img/checked.png">
 							<p>Без консервантов</p>
@@ -251,9 +254,9 @@
 			</div>
 			</div>
 		</div>
-		<div class="close_card_button">
-				<img src="img/close.svg">
-			</div>
+		<a href="./products.html" class="close_card_button">
+				<img src="img/close_black.svg">
+			</a>
 			<div class="scroll_list_buttons">
 				
 			</div>

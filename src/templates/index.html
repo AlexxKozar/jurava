@@ -1,4 +1,15 @@
-{% include "parts/header.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jurava</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/index/style.css" type="text/css">
+  <meta name="format-detection" content="telephone=no">
+  <!-- <link rel="shortcut icon" type="image/png" href="./favicon.png">  --> 
+</head>
+<body style="margin-top: 0">
+
 {% include "parts/mobile_menu.html" %}
 <div class="preloader">
 	Грузимся...
@@ -7,8 +18,8 @@
 		
 	<header>
 		<div class="logo">
-			<a href="./index.html">
-				<img src="img/Logo.png">
+			<a href="./">
+				<img src="img/logo.svg">
 			</a>
 		</div>
 		<nav>
@@ -17,25 +28,26 @@
 				<li class="hiddenLink"><a href="./products.html">Продукция</a></li>
 				<li class="hiddenLink"><a href="./support.html">Поддержка</a></li>
 				<li class="hiddenLink"><a href="./contacts.html">Контакты</a></li>
-				<li class="hiddenLink"><a href="./language.html"><img src="img/map_1.png"></a></li>
+				<li class="hiddenLink"><a href="./language.html"><img class="world" src="img/globe_white.svg"></a></li>
 				<li><a href="./basket.html" class="cart_icon">
 					<p class="cart_count">20</p>
-					<img src="img/Basket_white.png">
+					<img class="nav_sprite" src="img/cart_white.svg">
 				</a></li>
 			</ul>
 		</nav>
 	</header>
+	<div class="header_banner"></div>
 	<div class="banner_content">
 		<div class="banner_text_content">
 			<h2 class="banner_text_content_heading">
 			Создавайте вкусные йогурты!
 			</h2>
 			<p class="text_heading">
-			Сухие холодные смеси и йогуртница JURAVA созданы для того, 
+			Сухие молочные смеси и йогуртница JURAVA созданы <br class="display1200none">для того, 
 			чтобы вы всегда могли насладтися свежими и натуральными 
 			кисломолочными продуктами.
 			</p>
-			<a href="" class="button button_white banner_button">Хочу йогурт</a>
+			<!-- <a href="" class="button button_white banner_button">Хочу йогурт</a> -->
 		</div>
 		<div class="banner_img">
 			<img src="img/muska.png">
@@ -54,7 +66,7 @@
 	<div class="product_path_img-righside">
 		<img src="img/spoon.png">
 	</div>
-	<div class="container">
+	<div class="container product_path-container">
 		<div class="product_path_heading">
 			<h2 class="heading heading_black">
 				Вот так получается
@@ -132,13 +144,19 @@
 				</div>
 			</div>
 		</div>
-		<a href="" class="button button_white instruction_button">Инструкция по приготовлению</a>
+		<a href="./instruction.html" class="button button_white instruction_button">Инструкция по приготовлению</a>
 	</div>
 </section>
 
 
 
 <section class="products_list">
+	<div class="product_list_controls_next_button">
+		<img src="img/right_arrow.png" alt="">
+	</div>
+	<div class="product_list_controls_prev_button">
+		<img src="img/left_arrow.png" alt="">
+	</div>
 	<div class="heading heading_black">Наши продукты</div>
 	<div class="product_list_items">
 		<div class="product_list_items_item">
@@ -161,16 +179,10 @@
 		</div>
 	</div>
 	<div class="product_list_controls">
-		<div class="product_list_controls_prev_button">
-			<img src="img/left_arrow.png" alt="">
-		</div>
 		<div class="product_list_controls_scroll">	
 		</div>
-		<div class="product_list_controls_next_button">
-			<img src="img/right_arrow.png" alt="">
-		</div>
 	</div>
-	<a href="" class="button button_blue products_list_button">Все продукты</a>
+	<a href="./products.html" class="button button_blue products_list_button">Все продукты</a>
 </section>
 
 {% include "parts/footer.html" %}
